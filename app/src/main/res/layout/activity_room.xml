@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/colorAccent">
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/Appbar"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:gravity="left"
+
+                android:text="Group" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="2"
+        android:id="@+id/recyclerMessage"
+        android:layout_width="match_parent"
+        android:divider="#fff"
+        android:transcriptMode="normal"
+        android:verticalScrollbarPosition="right"
+        android:layout_height="wrap_content"
+
+
+        />
+
+    <LinearLayout
+
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/ed_messege"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:hint="enter your messege" />
+
+        <ImageView
+            android:id="@+id/img_send_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_baseline_image_24"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageView
+            android:id="@+id/img_send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
